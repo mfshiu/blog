@@ -1,159 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uiCookies:Explorer &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
-    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-merged.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+{% extends "layout/layout.html" %}
 
-    <!--[if lt IE 9]>
-      <script src="{{ url_for('static', filename='js/vendor/html5shiv.min.js') }}"></script>
-      <script src="{{ url_for('static', filename='js/vendor/respond.min.js') }}"></script>
-    <![endif]-->
-  </head>
-  <body>
+{% block body_begin %}
+<div class="probootstrap-loader"></div>
+{% endblock %}
 
-  <!-- START: header -->
-  
-  <div class="probootstrap-loader"></div>
+{% block content %}
+<div class="probootstrap-section">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 mb40">
+        <h2>獨孤九劍</h2>
+        <p>自詡是個攝影師也是個評論家，很愛拍照並欣賞他人作品，最討厭芭樂照，有關攝影的一切，我都想去接觸、去嚐試，最大的遺憾，是目前還不是個專業攝影師，期許有朝一日會是。</p>    
+      </div>
+    </div>
 
-  <header role="banner" class="probootstrap-header">
-    <div class="container">
-        <a href="/" class="probootstrap-logo">獨孤九劍<span>.</span></a>
-        
-        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
-        <div class="mobile-menu-overlay"></div>
-
-        <nav role="navigation" class="probootstrap-nav hidden-xs">
-          <ul class="probootstrap-main-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/photo">Photo</a></li>
-            <li><a href="/art">Art</a></li>
-            <li><a href="/architecture">Archi</a></li>
-          </ul>
-          <div class="extra-text visible-xs"> 
-            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <h5>Address</h5>
-            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
-            <h5>Connect</h5>
-            <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook2"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            </ul>
+    <div class="row probootstrap-gutter16">
+      <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/collection/20190419" class="img-bg" style="background-image: url({{ url_for('static', filename='img/20190419/cover.jpg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>台灣工程之美</h2>
+            <p>2019 攝影比賽</p>
           </div>
-        </nav>
+        </a>
+      </div>
+      <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/collection/20210324" class="img-bg" style="background-image: url({{ url_for('static', filename='img/20210324/R0000309.jpg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>開著我的吉普車車去探險</h2>
+            <p>一路上遇見了許多有趣的動物, 2021</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </header>
-  <!-- END: header -->
-  
-  <div class="probootstrap-section">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 mb40">
-          <h2>獨孤九劍</h2>
-          <p>自詡是個攝影師也是個評論家，很愛拍照並欣賞他人作品，最討厭芭樂照，有關攝影的一切，我都想去接觸、去嚐試，最大的遺憾，是目前還不是個專業攝影師，期許有朝一日會是。</p>    
-        </div>
-      </div>
 
-      <div class="row probootstrap-gutter16">
-        <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/collection/20190419" class="img-bg" style="background-image: url({{ url_for('static', filename='img/20190419/cover.jpg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>台灣工程之美</h2>
-              <p>2019 攝影比賽</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/collection/20210324" class="img-bg" style="background-image: url({{ url_for('static', filename='img/20210324/R0000309.jpg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>開著我的吉普車車去探險</h2>
-              <p>一路上遇見了許多有趣的動物, 2021</p>
-            </div>
-          </a>
-        </div>
+    <div class="row probootstrap-gutter16">
+      <div class="col-md-5 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/collection/20210429" class="img-bg" style="background-image: url({{ url_for('static', filename='img/20210429/PXL_20210429_111123094.MP.jpeg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>中山北路七段藝廊</h2>
+            <p>超高解析的3D作品</p>
+          </div>
+        </a>
       </div>
-
-      <div class="row probootstrap-gutter16">
-        <div class="col-md-5 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/collection/20210429" class="img-bg" style="background-image: url({{ url_for('static', filename='img/20210429/PXL_20210429_111123094.MP.jpeg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>中山北路七段藝廊</h2>
-              <p>超高解析的3D作品</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_5.jpg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>Man Captured</h2>
-              <p>Landscape</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_4.jpg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>Mountain with pines</h2>
-              <p>Landscape</p>
-            </div>
-          </a>
-        </div>
+      <div class="col-md-3 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_5.jpg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>Man Captured</h2>
+            <p>Landscape</p>
+          </div>
+        </a>
       </div>
-
-       <div class="row probootstrap-gutter16">
-        <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_7.jpg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>Mountains</h2>
-              <p>Landscape</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
-          <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_6.jpg') }});">
-            <div class="probootstrap-photo-details">
-              <h2>Beautiful Sunset</h2>
-              <p>Landscape</p>
-            </div>
-          </a>
-        </div>
+      <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_4.jpg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>Mountain with pines</h2>
+            <p>Landscape</p>
+          </div>
+        </a>
       </div>
-      
     </div>
+
+     <div class="row probootstrap-gutter16">
+      <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_7.jpg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>Mountains</h2>
+            <p>Landscape</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+        <a href="/" class="img-bg" style="background-image: url({{ url_for('static', filename='img/img_6.jpg') }});">
+          <div class="probootstrap-photo-details">
+            <h2>Beautiful Sunset</h2>
+            <p>Landscape</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
   </div>
-
-  <footer class="probootstrap-footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="probootstrap-copyright">&copy; 2019 <a href="http://eric.gigoo.co/">獨孤九劍</a> 版權所有</p>
-          <ul class="probootstrap-social">
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-facebook2"></i></a></li>
-            <li><a href="#"><i class="icon-instagram2"></i></a></li>
-            <li><a href="#"><i class="icon-google-plus"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
-  </div>
-  
-
-  <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/main.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-
-  </body>
-</html>
+</div>
+{% endblock %}

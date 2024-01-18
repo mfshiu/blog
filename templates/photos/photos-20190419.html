@@ -1,0 +1,36 @@
+{% extends "layout/layout.html" %}
+
+{% block body_begin %}
+<div class="probootstrap-loader"></div>
+{% endblock %}
+
+{% block content %}
+<div class="probootstrap-section">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 mb40 text-center">
+        <h2>台灣工程之美</h2>
+        <p>台灣工程之美攝影比賽, 2019</p>
+      </div>
+      <div class="col-md-6">
+        <p>臨時決定參加中華顧問工程司(CECI)為慶祝成立50週年，所舉辦的攝影比賽，抱著必落選的心情在自家附近拍下這些照片，一個愛攝影的人即使認真亂拍也是開心的，好個台灣工程之美。</p>    
+      </div>
+      <div class="col-md-6">
+        <p>在攝影的路上，我驚訝發現許多原本熟悉的參天大樹，竟遭受了異常慘烈的修剪，很明顯它們是捷運工程下的犧牲者。我極度痛心的拍下了現況，記錄了它們當下要死不活的倩影，哼，誰叫你們擋了人類的好路。(淚)</p>    
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p><a href="{{ url_for('static', filename='img/20190419/_DSC2210.jpg')  }}" class="image-popup"><img src="{{ url_for('static', filename='img/20190419/_DSC2210.jpg')  }}" class="img-responsive" alt="Free HTML5 Bootstrap Template by uicookies.com"></a></p>
+        <p><a href="{{ url_for('static', filename='img/20190419/_DSC2234.jpg')  }}" class="image-popup"><img src="{{ url_for('static', filename='img/20190419/_DSC2234.jpg')  }}" class="img-responsive" alt="Free HTML5 Bootstrap Template by uicookies.com"></a></p>
+      </div>
+      <div class="col-md-6">
+        <p><a href="{{ url_for('static', filename='img/20190419/_DSC2252.jpg')  }}" class="image-popup"><img src="{{ url_for('static', filename='img/20190419/_DSC2252.jpg')  }}" class="img-responsive" alt="Free HTML5 Bootstrap Template by uicookies.com"></a></p>
+        <p><a href="{{ url_for('static', filename='img/20190419/MRT1.jpg')  }}" class="image-popup"><img src="{{ url_for('static', filename='img/20190419/MRT1.jpg')  }}" class="img-responsive" alt="Free HTML5 Bootstrap Template by uicookies.com"></a></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+{% endblock %}

@@ -4,6 +4,7 @@
     {% include 'layout/head.html' %}
 </head>
 <body>
+    {% block body_begin %}{% endblock %}
     {% include 'layout/header.html' %}
     {% block content %}{% endblock %}
     {% include 'layout/footer.html' %}
