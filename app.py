@@ -1,11 +1,12 @@
-from flask import Flask, json, render_template
+from flask import Flask, redirect, render_template, url_for
   
 app = Flask(__name__)
 
 
 @app.route('/')
 def home():
-    return render_template('/index.html')
+    return redirect(url_for('photo'))
+    # return render_template('/index.html')
 
 
 @app.route('/archi')
@@ -27,7 +28,7 @@ def photo():
 def photos(id):
     return render_template(f'photos/photos-{id}.html')
 
-   
+            
 
 if __name__ == '__main__':
     # app.run(debug=True, port=5050)
