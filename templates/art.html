@@ -1,9 +1,91 @@
 {% extends "layout/layout.html" %}
 
 {% block body_begin %}
-<embed src="{{ url_for('static', filename='img/20210429/Casablanca.mp3') }}" loop="true" autostart="true" width="2" height="0" />
+<!-- <embed src="{{ url_for('static', filename='img/20210429/Casablanca.mp3') }}" loop="true" autostart="true" width="2" height="0" /> -->
 <div class="probootstrap-loader"></div>
 {% endblock %}
 
 {% block content %}
+<div class="probootstrap-section">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 mb40">
+                <h2>獨孤九劍</h2>
+                <p>自詡是個攝影師也是個評論家，很愛拍照並欣賞他人作品，最討厭芭樂照，有關攝影的一切，我都想去接觸、去嚐試，最大的遺憾，是目前還不是個專業攝影師，期許有朝一日會是。</p>
+            </div>
+        </div>
+
+        <div class="row probootstrap-gutter16">
+            <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/photos/20190419" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/20190419/cover.jpg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>台灣工程之美</h2>
+                        <p>2019 攝影比賽</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/photos/20210324" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/20210324/R0000309.jpg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>開著我的吉普車車去探險</h2>
+                        <p>一路上遇見了許多有趣的動物, 2021</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row probootstrap-gutter16">
+            <div class="col-md-5 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/photos/20210429" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/20210429/PXL_20210429_111123094.MP.jpeg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>中山北路七段藝廊</h2>
+                        <p>超高解析的3D作品</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/img_5.jpg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>Man Captured</h2>
+                        <p>Landscape</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/img_4.jpg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>Mountain with pines</h2>
+                        <p>Landscape</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row probootstrap-gutter16">
+            <div class="col-md-8 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/img_7.jpg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>Mountains</h2>
+                        <p>Landscape</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+                <a href="/" class="img-bg"
+                    style="background-image: url({{ url_for('static', filename='img/img_6.jpg') }});">
+                    <div class="probootstrap-photo-details">
+                        <h2>Beautiful Sunset</h2>
+                        <p>Landscape</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

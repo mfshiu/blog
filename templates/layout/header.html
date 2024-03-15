@@ -7,10 +7,10 @@
 
       <nav role="navigation" class="probootstrap-nav hidden-xs">
         <ul class="probootstrap-main-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/photo">Photo</a></li>
-          <li><a href="/art">Art</a></li>
-          <li><a href="/archi">Archi</a></li>
+          <!-- <li class="{{ '/'|is_active(current_path) }}"><a href="/">Home</a></li> -->
+          <li class="{{ '/photo'|is_active(current_path) }}"><a href="/photo">Photo</a></li>
+          <li class="{{ '/art'|is_active(current_path) }}"><a href="/art">Art</a></li>
+          <li class="{{ '/archi'|is_active(current_path) }}"><a href="/archi">Archi</a></li>
         </ul>
         <div class="extra-text visible-xs"> 
           <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
