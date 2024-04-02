@@ -2,3 +2,7 @@
 body {
     color: #828892;
 }
+
+.probootstrap-main-nav li.active a, .probootstrap-main-nav li.active a:hover {
+    text-decoration: underline;
+}

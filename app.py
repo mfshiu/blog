@@ -9,7 +9,7 @@ def home():
     return render_template('/photo.html', current_path=request.path)
     # return render_template('/index.html', current_path=request.path)
 
-  
+   
 @app.route('/archi')
 def archi():
     return render_template('/archi.html', current_path=request.path)
