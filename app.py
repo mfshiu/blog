@@ -2,8 +2,8 @@ from flask import Flask, json, render_template, request
 
   
 app = Flask(__name__)
+     
 
-      
 @app.route('/')
 def home():
     return render_template('/photo.html', current_path=request.path)
