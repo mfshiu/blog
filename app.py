@@ -3,13 +3,13 @@ from flask import Flask, json, render_template, request
   
 app = Flask(__name__)
 
-
+      
 @app.route('/')
 def home():
     return render_template('/photo.html', current_path=request.path)
     # return render_template('/index.html', current_path=request.path)
-  
 
+  
 @app.route('/archi')
 def archi():
     return render_template('/archi.html', current_path=request.path)
@@ -18,6 +18,11 @@ def archi():
 @app.route('/art')
 def art():
     return render_template('/art.html', current_path=request.path)
+
+ 
+@app.route('/arts/<string:id>')
+def arts(id):
+    return render_template(f'arts/{id}.html')
 
 
 @app.route('/photo')
