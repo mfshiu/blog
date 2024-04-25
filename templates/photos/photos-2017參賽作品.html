@@ -1,0 +1,39 @@
+{% extends "layout/layout.html" %}
+
+{% block body_begin %}
+<div class="probootstrap-loader"></div>
+{% endblock %}
+
+{% block content %}  
+<div class="probootstrap-section">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 mb40 text-center">
+        <h2>2017參賽作品</h2>
+        <p></p>
+      </div>
+      <div class="col-md-6">
+        <p></p>    
+      </div>
+      <div class="col-md-6">
+        <p></p>    
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p><a href="{{ url_for('static', filename='img/photos/2017參賽作品/不丹的回憶-許銘芳.jpg') }}" class="image-popup"><img src="{{ url_for('static', filename='img/photos/2017參賽作品/small/不丹的回憶-許銘芳.jpg') }}" class="img-responsive"></a></p>
+        <p><a href="{{ url_for('static', filename='img/photos/2017參賽作品/對於自由的渴望-許銘芳.jpg') }}" class="image-popup"><img src="{{ url_for('static', filename='img/photos/2017參賽作品/small/對於自由的渴望-許銘芳.jpg') }}" class="img-responsive"></a></p>
+        <p><a href="{{ url_for('static', filename='img/photos/2017參賽作品/旅途-許銘芳.jpg') }}" class="image-popup"><img src="{{ url_for('static', filename='img/photos/2017參賽作品/small/旅途-許銘芳.jpg') }}" class="img-responsive"></a></p>
+      </div>
+      <div class="col-md-6">
+        <p><a href="{{ url_for('static', filename='img/photos/2017參賽作品/新月水影-許銘芳.jpg') }}" class="image-popup"><img src="{{ url_for('static', filename='img/photos/2017參賽作品/small/新月水影-許銘芳.jpg') }}" class="img-responsive"></a></p>
+        <p><a href="{{ url_for('static', filename='img/photos/2017參賽作品/雨後忙碌的小鎮-許銘芳.jpg') }}" class="image-popup"><img src="{{ url_for('static', filename='img/photos/2017參賽作品/small/雨後忙碌的小鎮-許銘芳.jpg') }}" class="img-responsive"></a></p>
+        <p><a href="{{ url_for('static', filename='img/photos/2017參賽作品/黎明時分的海邊小鎮-許銘芳.jpg') }}" class="image-popup"><img src="{{ url_for('static', filename='img/photos/2017參賽作品/small/黎明時分的海邊小鎮-許銘芳.jpg') }}" class="img-responsive"></a></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock %}

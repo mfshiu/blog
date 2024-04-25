@@ -19,7 +19,7 @@ def archi():
 def archis(id):
     return render_template(f'archis/{id}.html')
  
- 
+   
 @app.route('/art')
 def art():
     return render_template('/art.html', current_path=request.path)
@@ -39,12 +39,12 @@ def photo():
 def photos(id):
     return render_template(f'photos/photos-{id}.html')
 
-
+  
 @app.template_filter('is_active')
 def is_active(path, current_path):
     return 'active' if path == current_path else ''
 
-   
+      
 
 if __name__ == '__main__':
     # app.run(debug=True, port=5050)
