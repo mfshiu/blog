@@ -39,7 +39,7 @@ def photo():
 def photos(id):
     return render_template(f'photos/photos-{id}.html')
 
-  
+
 @app.template_filter('is_active')
 def is_active(path, current_path):
     return 'active' if path == current_path else ''
