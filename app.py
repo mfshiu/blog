@@ -9,22 +9,22 @@ def home():
     return render_template('/photo.html', current_path='/photo')
     # return render_template('/index.html', current_path=request.path)
  
-      
+
 @app.route('/archi')
 def archi():
     return render_template('/archi.html', current_path=request.path)
    
-   
+
 @app.route('/archis/<string:id>')
 def archis(id):
     return render_template(f'archis/{id}.html')
  
- 
+
 @app.route('/art')
 def art():
     return render_template('/art.html', current_path=request.path)
    
- 
+
 @app.route('/arts/<string:id>')
 def arts(id):
     return render_template(f'arts/{id}.html')
