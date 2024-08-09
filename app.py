@@ -44,7 +44,7 @@ def photos(id):
 def is_active(path, current_path):
     return 'active' if path == current_path else ''
 
-   
+      
 
 if __name__ == '__main__':
     # app.run(debug=True, port=5050)
