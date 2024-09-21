@@ -28,8 +28,8 @@ def art():
 @app.route('/arts/<string:id>')
 def arts(id):
     return render_template(f'arts/{id}.html')
-
-
+    
+  
 @app.route('/photo')
 def photo():
     return render_template('/photo.html', current_path=request.path)
